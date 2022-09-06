@@ -1,4 +1,5 @@
 <?php
+define("START_TIME", microtime(true));
 const DEBUG = true;
 
 include_once 'service_load.php'; // Сервисные классы
@@ -18,11 +19,9 @@ if (isset($routing[$uri])) {
 
     if (file_exists($path_controller)) {
         include_once $path_controller;
-
         $action = 'action' . ucfirst($action);
 
         $obj_controller = new $controller();
-
         if (method_exists($obj_controller, $action)) {
             $obj_controller->$action();
         } else {

@@ -9,15 +9,7 @@
  */
 $routing = [
     '/' => 'SiteController:index', /** @see SiteController */ /** @see SiteController::actionIndex() */
-    '/foo' => 'FooController:index' /** @see FooController */ /** @see FooController::actionIndex() */
-];
-
-$routing_2 = [
-    '/' => [
-        'controller' => SiteController::class,
-        'action' => 'actionIndex',
-        'query' => [
-            'foo' => 'bar'
-        ]
-    ]
+    '/foo' => 'FooController:index', /** @see FooController */ /** @see FooController::actionIndex() */
+    '/api/v1/user/get' => 'UserController:get',
+    '/api/v1/user/list' => 'UserController:list',
 ];
