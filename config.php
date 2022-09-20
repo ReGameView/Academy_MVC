@@ -12,4 +12,5 @@ $routing = [
     '/foo' => 'FooController:index', /** @see FooController */ /** @see FooController::actionIndex() */
     '/api/v1/user/get' => 'UserController:get',
     '/api/v1/user/list' => 'UserController:list',
+    '/students' => 'StudentsController:index'
 ];
