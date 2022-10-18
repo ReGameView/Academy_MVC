@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/academy_cifra.iml" filepath="$PROJECT_DIR$/.idea/academy_cifra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/academy-laravel.iml" filepath="$PROJECT_DIR$/.idea/academy-laravel.iml" />
     </modules>
   </component>
 </project>
